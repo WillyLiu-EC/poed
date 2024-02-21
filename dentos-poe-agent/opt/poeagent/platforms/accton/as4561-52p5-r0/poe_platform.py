@@ -51,9 +51,9 @@ class PoePlatform_accton_as4561_52p5(PoeDrv.PoeDriver_microsemi_multi_chip_pd692
         self.chip_num = 2
         self._total_poe_port = 48
         self._ports_per_chip = 24
-        self._i2c_bus = [15,16]
+        self._i2c_bus = [17,18]
         self._i2c_addr = [0x3C, 0x38]
-        self._poe_bus = [SMBus(15), SMBus(16)]
+        self._poe_bus = [SMBus(17), SMBus(18)]
         # Add read 15byte first to cleanup buffer
         self.plat_poe_read(0)
         self.plat_poe_read(1)
